@@ -1,0 +1,9 @@
+  alias ls='ls --color=auto'
+  alias ll='ls -la --color=auto'
+  alias ..='cd ..'
+  alias ...='cd ../..'
+  alias ....='cd ../../..'
+  alias rm='rm -i' #prompts user before deletion
+  alias cp='cp -i' #prompts user before overwriting
+  
+  alias ssha='eval $(ssh-agent) && ssh-add' #asks for ssh passphrase only once
