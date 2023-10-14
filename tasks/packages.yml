@@ -4,8 +4,8 @@
       - htop
       - mc
       - tmux
-      - dconf-cli
-      - python3-psutil
+      - dconf-cli # necessary to use dconf
+      - python3-psutil # necessary to use dconf
       
 
 - name: copy wallpaper file
