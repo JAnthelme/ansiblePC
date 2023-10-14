@@ -7,7 +7,8 @@
       - vim
       - dconf-cli # necessary to use dconf
       - python3-psutil # necessary to use dconf
-
+      - same # scanner
+      
       # dev
       - libtool
       - libusb
