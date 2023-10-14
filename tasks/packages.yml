@@ -4,6 +4,8 @@
       - htop
       - mc
       - tmux
+      - dconf-cli
+      
 
 - name: copy wallpaper file
   copy:
