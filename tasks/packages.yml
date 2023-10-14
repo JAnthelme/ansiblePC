@@ -7,13 +7,19 @@
       - dconf-cli # necessary to use dconf
       - python3-psutil # necessary to use dconf
       
-
 - name: copy wallpaper file
   copy:
     src: files/wallpaper_1600x900_linux.png
     dest: /usr/share/backgrounds/ansible-wallpaper.png
     owner: root
     group: root
+
+- name: copy .bashrc file
+  copy:
+    src: files/bashrc
+    dest: /home/user1/.bashrc
+    owner: user1
+    group: user1
 
 - name: set wallpaper
   become_user: user1
