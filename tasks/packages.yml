@@ -4,6 +4,7 @@
       - htop
       - mc
       - tmux
+      - vim
       - dconf-cli # necessary to use dconf
       - python3-psutil # necessary to use dconf
       
@@ -14,10 +15,17 @@
     owner: root
     group: root
 
-- name: copy .bashrc file
+- name: copy .bash_aliases file
   copy:
-    src: files/bashrc
-    dest: /home/user1/.bashrc
+    src: files/bash_aliases
+    dest: /home/user1/.bash_aliases
+    owner: user1
+    group: user1
+
+- name: copy .vimrc file
+  copy:
+    src: files/vimrc
+    dest: /home/user1/.vimrc
     owner: user1
     group: user1
 
