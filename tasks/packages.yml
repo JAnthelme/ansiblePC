@@ -10,7 +10,7 @@
       
 - name: copy wallpaper file
   copy:
-    src: files/wallpaper_1600x900_linux.png
+    src: files/wallpaper_1920x1080_cmatrix.png
     dest: /usr/share/backgrounds/ansible-wallpaper.png
     owner: root
     group: root
