@@ -5,6 +5,7 @@
       - mc
       - tmux
       - dconf-cli
+      - python3-psutil
       
 
 - name: copy wallpaper file
