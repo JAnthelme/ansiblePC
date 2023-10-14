@@ -7,6 +7,10 @@
       - vim
       - dconf-cli # necessary to use dconf
       - python3-psutil # necessary to use dconf
+
+      # dev
+      - libtool
+      - libusb
       
 - name: copy wallpaper file
   copy:
