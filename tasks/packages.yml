@@ -10,8 +10,8 @@
 
 - name: copy wallpaper file
   copy:
-    src: files/wallpaper.png
-    dest: /usr/share/backgrounds/wallpaper_1600x900_linux.png
+    src: files/wallpaper_1600x900_linux.png
+    dest: /usr/share/backgrounds/ansible-wallpaper.png
     owner: root
     group: root
 
@@ -19,7 +19,7 @@
   become_user: user1
   dconf:
     key: "/org/gnome/desktop/background/picture-uri"
-    value: "'file:///usr/share/backgrounds/wallpaper_1600x900_linux.png'"
+    value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"
 
 - name: set wallpaper position
   become_user: user1
