@@ -53,3 +53,8 @@
 - name: Install proton vpn .deb package from the internet 
   ansible.builtin.apt:
     deb: https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.3-2_all.deb
+
+- name: Install proton-vpn-gnome-desktop
+  apt:
+    name: proton-vpn-gnome-desktop
+
