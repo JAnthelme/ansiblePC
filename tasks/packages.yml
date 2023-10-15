@@ -24,25 +24,25 @@
 - name: copy .bash_aliases file
   copy:
     src: files/bash_aliases
-    dest: /home/user1/.bash_aliases
-    owner: user1
-    group: user1
+    dest: "/home/{{ username }}/.bash_aliases"
+    owner: "{{ username }}"
+    group: "{{ username }}"
 
 - name: copy .vimrc file
   copy:
     src: files/vimrc
-    dest: /home/user1/.vimrc
-    owner: user1
-    group: user1
+    dest: "/home/{{ username }}/.vimrc"
+    owner: "{{ username }}"
+    group: "{{ username }}"
 
 - name: set wallpaper
-  become_user: user1
+  become_user: "{{ username }}"
   dconf:
     key: "/org/gnome/desktop/background/picture-uri"
     value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"
 
 - name: set wallpaper position
-  become_user: user1
+  become_user: "{{ username }}"
   dconf:
     key: "/org/gnome/desktop/background/picture-options"
     value: "'zoom'"
