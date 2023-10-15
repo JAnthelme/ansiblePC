@@ -2,6 +2,8 @@
 - hosts: localhost
   connection: local
   become: true
+  vars:
+    username: user1
 
   pre_tasks:
     - name: update repositories
