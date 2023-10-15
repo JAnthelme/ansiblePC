@@ -9,10 +9,12 @@
       - python3-psutil # necessary to use dconf
       - sane # scanner
       - hplip-gui # hp printer / scanner
+
+      # tests
+      - neofetch
       
       # dev
       - libtool
-      # - libusb
       
 - name: copy wallpaper file
   copy:
