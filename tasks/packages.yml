@@ -9,6 +9,7 @@
       - python3-psutil # necessary to use dconf
       - sane # scanner
       - hplip-gui # hp printer / scanner
+      - notepadqq
 
       # tests
       - neofetch
