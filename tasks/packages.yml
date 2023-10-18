@@ -59,3 +59,5 @@
   apt:
     name: proton-vpn-gnome-desktop
 
+# https://www.google.com/linuxrepositories/
+# https://michaelheap.com/ansible-installing-google-chrome/
