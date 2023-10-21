@@ -10,6 +10,7 @@
       - sane # scanner
       - hplip-gui # hp printer / scanner
       - notepadqq
+      - filezilla
 
       # tests
       - neofetch
