@@ -31,4 +31,5 @@ todo
 
 -[YAML escape chars](https://yaml.org/spec/1.2.2/#57-escaped-characters)
 
+- [FF settings1](https://privacyinternational.org/guide-step/4330/firefox-adjusting-settings-enhance-your-online-privacy)
 
