@@ -40,6 +40,13 @@ set -g status-left "#[bg=colour35]💻#[fg=colour234,bold] #H#[bg=colour34]#[bg=
 set -g status-right '#[bg=colour35]🕑 #[fg=colour234,bold]%H:%M'
 
 
-
-# C-d : exit pane | app
+# in tmux:
+# C-d : exit pane || exit tmux
+# prefix-d : detach session
+# prefix-c : create window
+# prefix-& : kill window
+# prefix-p || prefix-n : move prev || next window
+# prefix-, : rename window
+# at the console:
 # tmux ls : show running session
+# tmux a : attach tmux
