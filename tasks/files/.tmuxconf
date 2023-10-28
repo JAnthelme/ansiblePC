@@ -1,6 +1,6 @@
-# Use C-j and C-f for prefix
-set-option -g prefix C-j
-set-option -g prefix2 C-f
+# Use C-a and C-j for prefix
+set-option -g prefix C-a
+#set-option -g prefix2 C-j
 
 # Easy config reload
 bind-key r source-file ~/.tmux.conf \; display-message "tmux.conf reloaded."
@@ -16,16 +16,16 @@ bind -n M-Down select-pane -D
 
 
 # Shift-arrow to switch windows
-bind -n S-Left previous windows
-bind -n S-Right next-windows
+bind -n S-Left previous-window
+bind -n S-Right next-window
 
 # Set easier window split keys
 bind-key v split-window -h
 bind-key h split-window -v
 
 # Easily reorder windows with Ctrl-Shift-arrow
-bind-key -n C-S-Left swap window -t -1
-bind-key -n C-S-Right swap window -t +1
+bind-key -n C-S-Left swap-window -t -1
+bind-key -n C-S-Right swap-window -t +1
 
 # Synchronize panes
 bind-key y set-window-option synchronize-panes\; display-message "synchronize mode toggled."
