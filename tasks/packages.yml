@@ -39,6 +39,13 @@
     owner: "{{ username }}"
     group: "{{ username }}"
 
+- name: copy .tmux.conf file
+  copy:
+    scr: files/tmuxconf
+    dest: "/home/{{ username }}/.tmux.conf"
+    owner: "{{ username }}"
+    group: "{{ username }}"
+
 - name: set wallpaper
   become_user: "{{ username }}"
   dconf:
